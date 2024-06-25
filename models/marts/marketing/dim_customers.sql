@@ -12,7 +12,12 @@ orders as (
 
     select * from {{ ref('stg_jaffle_shop__orders') }}
 
-),
+), 
+
+/*
+orders as (
+    select * from {{ ref ('fct_orders')}}
+), */
 
 customer_orders as (
 
